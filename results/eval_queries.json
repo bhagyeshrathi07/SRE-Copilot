@@ -1,0 +1,244 @@
+[
+  {
+    "id": 1,
+    "query": "What runbook should I follow for high 5xx on api-gateway?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "5xx",
+      "api-gateway",
+      "runbook"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 2,
+    "query": "Show current open incidents for payments-service.",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "payments-service",
+      "open",
+      "incident"
+    ],
+    "category": "DB"
+  },
+  {
+    "id": 3,
+    "query": "What changed in the last deployment of payments-service?",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "deploy",
+      "payments-service",
+      "version"
+    ],
+    "category": "DB"
+  },
+  {
+    "id": 4,
+    "query": "Is there an active cloud provider incident impacting us-east1?",
+    "expected_tool": "check_cloud_status",
+    "expected_keywords": [
+      "us-east1",
+      "incident",
+      "status"
+    ],
+    "category": "Web"
+  },
+  {
+    "id": 5,
+    "query": "Summarize the last postmortem related to database connection pool exhaustion.",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "connection pool",
+      "postmortem",
+      "database"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 6,
+    "query": "Which team owns auth-service, and what's the escalation path?",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "auth-service",
+      "team",
+      "escalation"
+    ],
+    "category": "DB"
+  },
+  {
+    "id": 7,
+    "query": "Given alert CPU throttling on k8s node pool, what are first checks?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "CPU",
+      "throttling",
+      "check"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 8,
+    "query": "Correlate: did error rate spike after deploy v1.8.2?",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "error",
+      "deploy",
+      "spike"
+    ],
+    "category": "DB+RAG"
+  },
+  {
+    "id": 9,
+    "query": "Find known issues for redis 7.x causing latency spikes.",
+    "expected_tool": "web_search",
+    "expected_keywords": [
+      "redis",
+      "latency",
+      "issue"
+    ],
+    "category": "Web+RAG"
+  },
+  {
+    "id": 10,
+    "query": "What are the standard mitigations for Gitaly latency high?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "gitaly",
+      "latency",
+      "mitigation"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 11,
+    "query": "Pull ticket history: last 5 timeout issues for api-gateway.",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "timeout",
+      "api-gateway",
+      "history"
+    ],
+    "category": "DB"
+  },
+  {
+    "id": 12,
+    "query": "Is log4j version 2.17.0 affected by any OSV vulnerabilities?",
+    "expected_tool": "search_vulnerabilities",
+    "expected_keywords": [
+      "log4j",
+      "2.17.0",
+      "vulnerab"
+    ],
+    "category": "Web"
+  },
+  {
+    "id": 13,
+    "query": "Based on similar incidents, what is likely root cause for sudden 502 + healthy pods?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "502",
+      "root cause",
+      "pods"
+    ],
+    "category": "RAG+DB"
+  },
+  {
+    "id": 14,
+    "query": "Draft an incident update message for stakeholders including impact and mitigation.",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "incident",
+      "update",
+      "stakeholder"
+    ],
+    "category": "DB+RAG"
+  },
+  {
+    "id": 15,
+    "query": "What dashboards/metrics should I check for DB replication lag?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "dashboard",
+      "metric",
+      "replication"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 16,
+    "query": "Are there KEV-listed CVEs for openssl this month?",
+    "expected_tool": "web_search",
+    "expected_keywords": [
+      "KEV",
+      "CVE",
+      "openssl"
+    ],
+    "category": "Web"
+  },
+  {
+    "id": 17,
+    "query": "Which runbook covers Helm upgrade stuck / rollback?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "helm",
+      "upgrade",
+      "rollback"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 18,
+    "query": "Search if GitHub is currently degraded and could affect CI.",
+    "expected_tool": "web_search",
+    "expected_keywords": [
+      "github",
+      "status",
+      "CI"
+    ],
+    "category": "Web"
+  },
+  {
+    "id": 19,
+    "query": "Summarize deploy diffs between the last two releases for frontend.",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "deploy",
+      "diff",
+      "frontend"
+    ],
+    "category": "DB"
+  },
+  {
+    "id": 20,
+    "query": "Create a step-by-step triage plan for memory leak suspected in service X.",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "memory",
+      "leak",
+      "triage"
+    ],
+    "category": "RAG"
+  },
+  {
+    "id": 21,
+    "query": "What's the recommended rollback procedure for the latest release?",
+    "expected_tool": "search_runbooks",
+    "expected_keywords": [
+      "rollback",
+      "procedure",
+      "release"
+    ],
+    "category": "RAG+DB"
+  },
+  {
+    "id": 22,
+    "query": "Identify whether this alert matches any previous incident fingerprint.",
+    "expected_tool": "query_database",
+    "expected_keywords": [
+      "alert",
+      "incident",
+      "match"
+    ],
+    "category": "DB"
+  }
+]
