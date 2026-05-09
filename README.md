@@ -1,6 +1,6 @@
 # SRE Copilot
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhagyeshrathi07/SRE-Copilot/blob/main/SRE_copilot.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhagyeshrathi07/SRE-Copilot/blob/main/sre_copilot.ipynb)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -122,7 +122,7 @@ Both 32B and 3B models run **simultaneously on a single A100-80GB** via 4-bit NF
 
 ### Run in Colab (recommended)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhagyeshrathi07/SRE-Copilot/blob/main/SRE_copilot.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhagyeshrathi07/SRE-Copilot/blob/main/sre_copilot.ipynb)
 
 1. Click the badge above
 2. Select **Runtime → Change runtime type → A100 GPU** (Colab Pro+ required)
